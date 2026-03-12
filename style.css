@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .container {
     background: linear-gradient(#ffffff, #616161);
     margin: 0;
