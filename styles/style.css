@@ -10,14 +10,34 @@ html, body {
 }
 
 h1 {
-    color: white
+    color: white;
+    text-decoration: underline;
 }
 
 h2 {
     color: white
 }
 
+.interact_row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.row_button {
+    background-color: #0069f3da;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
 .content_div {
     background: linear-gradient(#0077ff, #0c39ff);
-    border-radius: 90px;
+    border-radius: 25px;
+    max-width: 550px;
+    margin: auto;
+    padding: 15px;
 }
