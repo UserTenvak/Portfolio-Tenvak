@@ -1,26 +1,23 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
-    min-height: 100vh; 
-    background: linear-gradient(#ffffff, #797777);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    color: #333;
+    background: linear-gradient(#52c8ff, #006eff);
+
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "Roboto", "Helvetica", "Arial", sans-serif,
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-body h1 {
-    position: absolute;
-    top: 0; 
-    color: rgb(48, 48, 48)
+h1 {
+    color: white
 }
 
-/* Content1 Styles */
-.content1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+h2 {
+    color: white
+}
+
+.content_div {
+    background: linear-gradient(#0077ff, #0c39ff);
+    border-radius: 90px;
 }
