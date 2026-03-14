@@ -1,0 +1,31 @@
+.work-div {
+    background-color: var(--dark-bg);
+    border-radius: 15px;
+    max-width: 550px;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    text-align: left; 
+    transition: transform 0.2s;
+}
+
+.work-div:hover {
+    transform: scale(1.01);
+}
+
+.work-div h2 a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.work-div h2 a:hover {
+    text-decoration: underline; 
+}
+
+.project-image {
+    width: 100%;    
+    max-height: 300px; 
+    object-fit: cover;   
+    border-radius: 10px;
+    margin-top: 15px;  
+}

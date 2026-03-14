@@ -1,0 +1,35 @@
+.content-div {
+    background-color: var(--dark-bg);
+    border-radius: 15px;
+    max-width: 550px;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    transition: transform 0.2s;
+}
+
+.content-div h2 a {
+    text-decoration: none;
+}
+
+.content-div h2 a:hover {
+    text-decoration: underline;
+}
+
+.content-div:hover {
+  transform: scale(1.01);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.header-container img {
+    max-height: 80px;
+    max-width: 150px;
+    border-radius: 3px;
+}

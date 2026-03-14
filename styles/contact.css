@@ -1,0 +1,12 @@
+.data-container {
+    background-color: var(--dark-bg);
+    border-radius: 15px;
+    max-width: 550px;
+    margin: 10px auto;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.data-container:hover {
+    transform: scale(1.01);
+}
