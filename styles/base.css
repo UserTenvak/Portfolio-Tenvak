@@ -1,23 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 10px #0431fa; }
+  50% { box-shadow: 0 0 20px #0026ff; }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 :root {
     --white: #ffffff;
-    --dark-bg: #202020;
-    --gradient-bg: linear-gradient(#000, #222);
+    --dark-bg: #181818;
 }
 
 html, body {
     height: 100%;
     margin: 0;
-    background: var(--gradient-bg);
+    background: linear-gradient(-45deg, #4f7eff, #70c6ff, #0089fa, #8bfbff);
+    background-size: 400% 400%;
+    animation: gradientShift 20s ease infinite;
     text-align: center;
     font-family: "Rubik", sans-serif;
     font-weight: 700;
     color: var(--white);
-}
-
-.bold-text {
-    font-weight: 700;
 }
 
 h1, h2 {
@@ -32,6 +46,14 @@ h1 {
 
 p {
     font-weight: 100;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
 }
 
 .row {
@@ -54,4 +76,5 @@ p {
 
 .button:hover {
     transform: scale(1.05);
+    animation: glow 2s infinite alternate;
 }
