@@ -23,30 +23,33 @@
     --dark-bg: rgba(34, 34, 34, 0.85);
 }
 
-html, body {
-    height: auto;
-    min-height: 100%;
-    
-    -webkit-overflow-scrolling: touch; 
-    touch-action: pan-y; 
+html {
+    height: -webkit-fill-available; 
+    overflow-y: auto;
     overflow-x: hidden;
-    overflow-y: auto; 
-    
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: "Rubik", sans-serif;
-    color: var(--white);
 }
 
 body {
+    min-height: 100vh;
+    height: auto;
+    
+    overflow-y: visible; 
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    color: var(--white);
+
     background: 
-        radial-gradient(circle, rgba(255, 255, 255, 0.35) 1px, transparent 1px) repeat, /* dots */
-        linear-gradient(-45deg, #4f7eff, #32a5f1, #0089fa, #8bfbff);               /* gradient */
-    background-size: 
-        40px 40px, 
-        400% 400%; 
+        radial-gradient(circle, rgba(255, 255, 255, 0.35) 1px, transparent 1px) repeat,
+        linear-gradient(-45deg, #4f7eff, #32a5f1, #0089fa, #8bfbff);
+    background-size: 40px 40px, 400% 400%;
+    background-attachment: scroll; 
     animation: gradientShift 50s ease infinite;
+
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2 {
