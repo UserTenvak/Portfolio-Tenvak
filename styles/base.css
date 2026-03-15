@@ -42,6 +42,7 @@ body {
         40px 40px, 
         400% 400%; 
     animation: gradientShift 50s ease infinite;
+    overflow: scroll;
 }
 
 h1, h2 {
