@@ -1,8 +1,6 @@
 .footer {
     position: relative; 
     margin-top: 40px; 
-    
-    
     width: 100%;
     background-color: var(--dark-bg);
     color: var(--white);
