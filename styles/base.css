@@ -24,8 +24,12 @@
 }
 
 html, body {
-    height: 100%;
+    height: auto;
+    min-height: 150%;
+    overflow-x: hidden;
+    overflow-y: auto;
     margin: 0;
+    padding: 0;
     text-align: center;
     font-family: "Rubik", sans-serif;
     font-weight: 700;
@@ -42,7 +46,6 @@ body {
         40px 40px, 
         400% 400%; 
     animation: gradientShift 50s ease infinite;
-    overflow: scroll;
 }
 
 h1, h2 {
