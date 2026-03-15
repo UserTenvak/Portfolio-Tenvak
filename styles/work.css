@@ -7,6 +7,8 @@
     flex: 1 1 300px;
     text-align: left; 
     transition: transform 0.2s;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 
+                0 0 0 1px rgba(255, 255, 255, 0.05); 
 }
 
 .work-div:hover {
@@ -14,7 +16,7 @@
 }
 
 .work-div h2 a {
-    color: var(--white);
+    color: var(--link-color);
     text-decoration: none;
 }
 

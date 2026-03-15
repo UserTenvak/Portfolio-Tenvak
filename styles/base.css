@@ -18,20 +18,30 @@
 }
 
 :root {
-    --white: #ffffff;
-    --dark-bg: #181818;
+    --white: rgb(255, 255, 255);
+    --link-color: rgb(0, 195, 255);
+    --dark-bg: rgba(34, 34, 34, 0.85);
 }
 
 html, body {
     height: 100%;
     margin: 0;
-    background: linear-gradient(-45deg, #4f7eff, #70c6ff, #0089fa, #8bfbff);
-    background-size: 400% 400%;
-    animation: gradientShift 20s ease infinite;
     text-align: center;
     font-family: "Rubik", sans-serif;
     font-weight: 700;
     color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+body {
+    background: 
+        radial-gradient(circle, rgba(255, 255, 255, 0.35) 1px, transparent 1px) repeat, /* dots */
+        linear-gradient(-45deg, #4f7eff, #32a5f1, #0089fa, #8bfbff);               /* gradient */
+    background-size: 
+        40px 40px, 
+        400% 400%; 
+    animation: gradientShift 50s ease infinite;
 }
 
 h1, h2 {
@@ -39,17 +49,12 @@ h1, h2 {
     margin: 0;
 }
 
-h1 {
-    text-decoration: underline;
-    font-size: 2.5em;
-}
-
 p {
     font-weight: 100;
 }
 
 .bold-text {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .floating {
@@ -69,7 +74,7 @@ p {
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 45px;
     margin: 5px;
     transition: transform 0.2s;
 }

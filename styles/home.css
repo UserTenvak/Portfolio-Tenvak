@@ -1,18 +1,30 @@
 .content-div {
-    background-color: var(--dark-bg);
+    background-color: var(--dark-bg);  
     border-radius: 15px;
     max-width: 550px;
     margin: 10px;
     padding: 20px;
     flex: 1 1 300px;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 
+                0 0 0 1px rgba(255, 255, 255, 0.05); 
 }
 
 .content-div h2 a {
+    color: var(--link-color);
     text-decoration: none;
 }
 
 .content-div h2 a:hover {
+    text-decoration: underline;
+}
+
+.content-div p a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.content-div p a:hover {
     text-decoration: underline;
 }
 
