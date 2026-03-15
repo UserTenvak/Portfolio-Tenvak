@@ -25,6 +25,8 @@
 
 html {
     height: -webkit-fill-available; 
+    background: var(--dark-bg);
+    overscroll-behavior: none;
     overflow-y: auto;
     overflow-x: hidden;
 }
